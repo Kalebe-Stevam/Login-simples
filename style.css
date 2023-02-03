@@ -6,10 +6,9 @@
     font-style: normal;
 }
 
-
-
 body {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     background-image: url("./img/background.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -19,9 +18,10 @@ body {
 
 main {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    margin: 90px 0 20%;
 }
  h1 {
     font-weight: 700;
@@ -29,31 +29,36 @@ main {
     line-height: 50px;
     color: #FFFFFF;
     margin-bottom: 50px;
-    margin-top: 184px;
-    margin-left: 44px;
-    flex: 100%;
+    width: 340px;
  }
 
-.i-input{
-    margin-left: 44px;
-    flex: 100%;
- }
 
  .i-input input {
-    box-sizing: border-box;
     width: 340px;
+    font-weight: 400;
     height: 45px;
-    background: rgba(217, 217, 217, 0.15);
-    border: 2px solid rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.712);
+    background-color: rgba(217, 217, 217, 0.15);
     border-radius: 5px;
     padding-left: 34px;
     text-align: left;
     margin-bottom: 50px;
- }
+    font-size: 17px;
+    transition-property: background-color;
+    transition-duration: 0.8s;
+}
 
- input::placeholder {
+.i-input input:hover {
+    background-color: transparent;
+}
+
+input:focus{
+    outline: 0;
+}
+
+input::placeholder {
     font-style: normal;
-    font-weight: 275;
+    font-weight: 400;
     font-size: 17px;
     line-height: 26px;
     color: rgba(0, 0, 0, 0.8);
@@ -80,14 +85,28 @@ button {
     font-size: 17px;
     color: rgba(0, 0, 0, 0.67);
     margin-bottom: 50px;
+    transition-property:  color, background-color, border, box-shadow;
+    transition-duration: 450ms ;
+}
 
+
+button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.336);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 27px 8px rgba(255, 255, 255, 0.25);
 }
 
 .cadastre-se {
-    flex: 100%;
-    width: 270px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
     color: #000000;
-    margin-left: 44px;
+    width: 350px;
+    margin: 4px;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
