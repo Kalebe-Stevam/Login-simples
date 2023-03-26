@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 90px auto;
+}
+
+h1{
+    margin-bottom: 45px;
+    color: white;
+    font-size: 37px;
+    
+}
+
+.all-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.all-input input {
+    width: 340px;
+    height: 45px;
+    border: 2px solid rgba(255, 255, 255, 0.712);
+    background-color: rgba(217, 217, 217, 0.15);
+    border-radius: 5px;
+    padding-left: 34px;
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 17px;
+    color: white;
+}
+input:focus{
+    outline: 0;
+}
+
+input::placeholder {
+    color: #C0C0C0;
+    font-size: 17px;
+    
+    
+}
+.btn_creat_account {
+    border: 2px solid rgba(255, 255, 255, 0.712);
+    background-color: rgba(217, 217, 217, 0.15);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.712);
+    background-color: rgba(217, 217, 217, 0.15);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 160px;
+    height: 45px;
+}
+
+.creat_with {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 45px;
+    margin-top: 45px;
+    
+}
+
+.creat_with button {
+    width: 127px;
+    height: 40px;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border: 2px solid rgba(255, 255, 255, 0.712);
+    background-color: rgba(217, 217, 217, 0.15);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+}
